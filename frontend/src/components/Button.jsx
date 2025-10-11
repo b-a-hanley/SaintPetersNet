@@ -30,7 +30,7 @@ export function FooterButtons({link, text, link2, text2}) {
   );
 }
 
-export function PrimaryButton({link, children}) {
+export function PrimaryButton({children, link}) {
   return (
     <a href={link} className="block px-4 py-2 bg-action rounded-lg font-medium text-white hover:bg-action/80">
         {children}
@@ -38,7 +38,7 @@ export function PrimaryButton({link, children}) {
   );
 }
 
-export function SpreadButton({link, children}) {
+export function SpreadButton({children, link}) {
   return (
     <a href={link} className="flex-1 text-center px-2 py-2 text-sm font-medium bg-action hover:bg-action rounded-lg">
       {children}
