@@ -1,0 +1,148 @@
+:root {
+  
+  --nav: #4B3621;           /* Deep indigo */           /* Deep navy-grey */
+  --navText: #ffffff;         /* White */
+  --background: #CBB994;      /* Light brown */
+  --sectionBackground: #FFF4D6; /* Warmer cream */
+  --divBackground: #ffffff;   /* White */
+  --primary: #D4A017;         /* Mustard */
+  --action: #D4A017;          /* Mustard accent */
+}
+
+.blue {
+    --nav: #111827;
+  --navText: #ffffff;
+  --background: #91C0D7;
+  --sectionBackground: #d1eaf9;
+  --divBackground: #fff; 
+  --primary: #38B6FF; 
+  --action: #38B6FF; 
+  --text: #000000;  
+  --textVariant: #b1b1b1; 
+}
+.orange {
+    /* Navigation */
+  --nav: #111827;        /* Deep navy-grey */
+  --navText: #ffffff;    /* White */
+  --background: #F9F6EE;        /* Off-White */
+  --sectionBackground: #FFFBF2; /* Soft cream */
+  --divBackground: #ffffff;     /* Pure white */
+  --primary: #D4A017;    /* Mustard */
+  --action: #D4A017;     /* Mustard accent */
+}
+.purple{
+  /* Text */
+  --text: #000000;       /* Black */
+  --textVariant: #b1b1b1;/* Grey */
+   --nav: #111827;
+ --background: #202050;
+ --sectionBackground: #312e81;
+ --divBackground: #4338ca; 
+ --primary: #a5b4fc; 
+ --action: #2563eb; 
+ --text: #ffffff;   
+ --textVariant: #b1b1b1; 
+}
+.nav {
+    background-color: var(--nav);
+    color: var(--navText);
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.border-background {
+    border-color: var(--action);
+}
+
+.bg-background {
+    background-color: var(--background);
+}
+
+.bg-section-background {
+    background-color: var(--sectionBackground);
+}
+
+.bg-div-background {
+    background-color: var(--divBackground);
+}
+
+.bg-primary {
+    background-color: var(--action);
+}
+
+.bg-primary:hover {
+  background-color: var(--primary);
+  color: var(--text)
+}
+
+a {
+  color: var(--text);
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+.bg-action {
+    background-color: var(--action);
+    color: var(--navText)
+}
+
+.bg-action:hover {
+    background-color: var(--action);
+    color: var(--text)
+}
+
+.bg-nav-action {
+    background-color: var(--action);
+    color: var(--nav)
+}
+
+.bg-nav-action:hover {
+    background-color: var(--action);
+    color: var(--textvariant)
+}
+
+.bg-gray {
+    background-color: var(--textVariant);
+}
+
+.text-colour {
+    color: var(--text);
+}
+
+.text-gray {
+    color: var(--textVariant);
+}
+
+.text-primary {
+    color: var(--primary);
+}
+
+.ring-button {
+    border-color: var(--text);
+    color: var(--text);
+    text-align: center;
+}
+
+.ring-button:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.highlight-ring {
+    color: var(--text);
+    text-align: center;
+}
+
+.highlight-ring:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.ring-button-group {
+    border-color: var(--background);
+}
