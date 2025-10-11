@@ -9,7 +9,6 @@ export default function ContactUs() {
 
       <Row>
         <Img path="/assets/Fishing-net.jpg" />
-
         <TextContent>
           <p className="mt-2 py-6 text-2xl font-bold tracking-tight text-colour sm:text-3xl">Email</p>
           <div className="flex w-full gap-1">
@@ -20,7 +19,6 @@ export default function ContactUs() {
               Contact us
             </a>
           </div>
-
           <Address
             line1="Porchester"
             line2="Fareham"
