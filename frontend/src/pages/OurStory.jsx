@@ -4,7 +4,6 @@ import OurStorySection from "../sections/OurStorySection";
 export default function OurStory() {
   return (
     <>
-      <Banner>OurStory</Banner>
       <OurStorySection />
     </>
   );

@@ -1,3 +1,4 @@
+import { Page } from '../components/Section';
 import {Banner} from '../components/Text'
 
 const skills = [

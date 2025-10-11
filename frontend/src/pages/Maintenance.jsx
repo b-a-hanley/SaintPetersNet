@@ -1,4 +1,4 @@
-import { Page, TextContent } from "../components/Section";
+import { Img, Page, Row, TextContent } from "../components/Section";
 import {Banner, BaseText, Subtitle} from "../components/Text";
 
 const languages = [
@@ -21,7 +21,7 @@ export default function Maintenance() {
 
       {/* Main Section */}
       <Row>
-        <Img path="/assets/Fishing-net.jpg" />,
+        <Img path="/assets/Fishing-net.jpg" />
         <TextContent>
           <Subtitle>Fixing bugs, creating updates and making adjustments</Subtitle>
           <BaseText>If your church website does what it says on the tin, if you like familiarity, let us support you in that. Rather than rebuilding           the world we can make fixes, updates and tweaks, we charge a flat rate of £25 per hour on non-StPetersNet websites. In some occasions it may be more advisable to switch to our hosting, as you may end up saving more. We might even be able to recreate your previous appearance!</BaseText>
@@ -29,9 +29,7 @@ export default function Maintenance() {
       </Row>
       {/* Programming Languages */}
       <div className="px-4 sm:px-6 lg:px-12 mt-8">
-        <p className="text-2xl sm:text-3xl underline py-4 font-bold text-colour text-center">
-          Programming language experience
-        </p>
+        <Subtitle>Programming Language experience</Subtitle>
         <div className="flex flex-col gap-4 w-full">
           {languages.map((lang, index) => (
             <div key={index}>

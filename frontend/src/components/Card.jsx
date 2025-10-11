@@ -11,6 +11,7 @@ export function TabletButton({path, children}) {
 }
 
 export function PriceCard() {
+    return (
     <div className="flex flex-col rounded-xl highlight-ring shadow-lg bg-div-background p-8 text-colour border-2 border-action hover:shadow-2xl transition-shadow duration-300">
         <h3 className="text-2xl font-semibold mb-4">Enterprise</h3>
         <p className="text-gray-700 mb-6">Best for extra large and growing churches.</p>
@@ -70,16 +71,19 @@ export function PriceCard() {
             <a href="/enterprise" className="block text-center bg-action text-white font-medium rounded-lg py-3 hover:opacity-90 transition-opacity">Get Started</a>
         </div>
     </div>
+    );
 }
 
 export function PriceGrid({content}) {
-    <div className="flex flex-col rounded-xl highlight-ring shadow-lg bg-div-background p-8 text-colour border-2 border-action hover:shadow-2xl transition-shadow duration-300">
-        {content}
-    </div>
+    return (
+        <div className="flex flex-col rounded-xl highlight-ring shadow-lg bg-div-background p-8 text-colour border-2 border-action hover:shadow-2xl transition-shadow duration-300">
+            {content}
+        </div>
+    );
 }
 
 export function TeamCard({path, textcontent}) {
-    <>
+    return (
         <div className="items-center bg-div-background rounded-lg shadow sm:flex">
             <div className="flex justify-center md:justify-start">
                 <img className="h-auto max-w-xs rounded-lg shadow-lg" 
@@ -90,13 +94,13 @@ export function TeamCard({path, textcontent}) {
                 {textcontent}
             </div>
         </div> 
-    </>
+    );
 }
 
 export function TeamGrid({content}) {
-    <>
+    return (
         <div className="grid gap-8 px-6 mb-6 lg:mb-16 md:grid-cols-2">
             {content}
         </div>
-    </>
+    );
 }

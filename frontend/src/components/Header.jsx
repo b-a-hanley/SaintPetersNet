@@ -2,6 +2,7 @@ import { useState } from "react";
 import LogoBrown from "../../assets/Logo-brown.png";
 import LogoBrownAlt from "../../assets/Logo-brown-alt.png";
 import {churchName} from "../automation/Config";
+import { PrimaryButton } from "./Button";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,12 +51,7 @@ export default function Header() {
             <li><a href="ben-hanley" className="block px-4 py-2 hover:text-primary">Our Team</a></li>
             <li><a href="pricing" className="block px-4 py-2 hover:text-primary">Pricing</a></li>
             <li>
-              <a
-                href="contact-us"
-                className="block px-4 py-2 bg-action rounded-lg text-white hover:bg-action/80"
-              >
-                Contact Us
-              </a>
+              <PrimaryButton link="contact-us">Contact us</PrimaryButton>
             </li>
           </ul>
         </div>

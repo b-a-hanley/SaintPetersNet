@@ -4,7 +4,6 @@ import PricingSection from "../sections/PricingSection";
 export default function Pricing() {
   return (
       <>
-          <Banner>Pricing</Banner>
           <PricingSection />
       </>
   );

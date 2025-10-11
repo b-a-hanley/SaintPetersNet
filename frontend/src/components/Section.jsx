@@ -1,6 +1,6 @@
 import {altFromPath} from "../automation/Config";
 
-export function Page(children) {
+export function Page({ children }) {
   return (
     <div className="bg-section-background justify-center mx-6 my-6 rounded-xl sm:py-32">
         {children}
@@ -8,7 +8,7 @@ export function Page(children) {
   );
 }
 
-export function Row(children) {
+export function Row({ children }) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-12 px-6">
         {children}
@@ -24,7 +24,7 @@ export function TextContent({children}) {
   );
 }
 
-export function Img(path) {
+export function Img({path}) {
   return (
     <div className="flex justify-center md:justify-end md:order-2">
         <img className="h-auto max-w-full rounded-lg shadow-lg" 
@@ -50,7 +50,7 @@ export function Hero() {
   );
 }
 
-export function GoogleMap(path) {
+export function GoogleMap({path}) {
   return (
     <div className="mx-6 my-12 px-6">
       <iframe

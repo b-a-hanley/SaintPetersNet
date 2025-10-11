@@ -1,10 +1,10 @@
 import {churchName} from "../automation/Config";
 
-export function Banner({ title }) {
+export function Banner({ children }) {
   return (
     <div className="text-center px-6">
       <h3 className="text-base font-semibold leading-7 text-primary">{churchName}</h3>
-      <p className="mt-2 text-4xl font-bold tracking-tight text-colour sm:text-5xl">{title}</p>
+      <p className="mt-2 text-4xl font-bold tracking-tight text-colour sm:text-5xl">{children}</p>
     </div>
   );
 }
@@ -27,15 +27,15 @@ export function Quote({ quote, reference }) {
   );
 }
 
-export function Subtitle({ text }) {
+export function Subtitle({ children, underline=false }) {
   return (
-    <p className="mt-2 text-2xl font-bold tracking-tight sm:text-3xl">{text}</p>
+    <p className="mt-2 text-2xl py-4 text-center font-bold tracking-tight sm:text-3xl">{children}</p>
   );
 }
 
-export function BaseText({ text }) {
+export function BaseText({ children }) {
   return (
-    <p className="mt-6 text-xl leading-8 text-colour">{text}</p>
+    <p className="mt-6 text-xl leading-8 text-colour">{children}</p>
   );
 }
 
